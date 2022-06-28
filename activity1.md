@@ -1,16 +1,38 @@
 ### @explicitHints true
-### @hideIteration true 
+# Activity 3 - Cleaning up.
 
-
-# Activity 1 - Which one is right?
+```python
+for i in range(2):
+pass
+agent.collect_all()
+agent.move(FORWARD, 5)
+agent.drop_all(FORWARD)
+```
 
 ## Step 1
-Check which one of the commands written on the computer monitors is correct and shows **"Hi"** in the chat when run.
-Press the mouse button on the right side of the monitor in the game if the code runs correctly.
-Click on the hints if you need help.
-
+**Part 1:** Write some code so that the Agent will go over every block of the small carpet and pick up the dirt.
 ### ~ tutorialhint 
-The command structure in Minecraft python is:
-```python
-command_group.command_name()
+Don't forget that, in this case, two loops should not have the same variable name.
+
+## Step 2
+**Part 2:** Edit the same code so that the Agent does the same thing but for the larger carpet. Do this by repeating the code **3** times,
+using a `||loops:for||` loop. At the end try to make the Agent drop all of the dirt in the trash to its **right**. 
+### ~ tutorialhint 
+Remember that you will need to use double indentation in your code.
+
+```template
+//Replace the lines below with your code #    
+//loop number 3                                 | Part 2
+//loop number 1                        | Part 1
+agent.collect_all()
+agent.move(FORWARD, 1)
+//end of loop 1
+agent.move(RIGHT, 1)
+//loop number 2                        | Part 1
+//make the Agent collect all           | Part 1  
+//make the Agent move back             | Part 1  
+//end of loop 2
+//make the Agent move right                     | Part 2
+//end of loop 3  
+//make the Agent drop all to the right          | Part 2  
 ```
